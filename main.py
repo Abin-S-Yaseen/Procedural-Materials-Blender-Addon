@@ -23,6 +23,8 @@ musgrave_node = 'ShaderNodeTexMusgrave'
 noise_node = 'ShaderNodeTexNoise'
 colorramp_node = 'ShaderNodeValToRGB'
 bump_node = 'ShaderNodeBump'
+mix_rgb_node = 'ShaderNodeMix'
+
 
 # Gold material
 class SHADER_OT_GOLD(bpy.types.Operator):
