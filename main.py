@@ -106,6 +106,8 @@ class SHADER_OT_GOLD(bpy.types.Operator):
             
         return {'FINISHED'}
 
+# Metal material
+class SHADER_OT_METAL(bpy.types.Operator):
 # wood material
 class SHADER_OT_WOOD(bpy.types.Operator):
     
