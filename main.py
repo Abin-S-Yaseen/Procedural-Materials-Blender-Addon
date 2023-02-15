@@ -108,6 +108,9 @@ class SHADER_OT_GOLD(bpy.types.Operator):
 
 # Metal material
 class SHADER_OT_METAL(bpy.types.Operator):
+    
+    bl_label = "Metal"
+    bl_idname = 'shader.metal_operator'
 # wood material
 class SHADER_OT_WOOD(bpy.types.Operator):
     
