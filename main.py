@@ -111,6 +111,13 @@ class SHADER_OT_METAL(bpy.types.Operator):
     
     bl_label = "Metal"
     bl_idname = 'shader.metal_operator'
+    
+    
+    def execute(self, context):
+        
+        #Create a Shader Material and name it Metal
+        material_metal = bpy.data.materials.new(name= "Metal")
+        material_metal.use_nodes = True
 # wood material
 class SHADER_OT_WOOD(bpy.types.Operator):
     
