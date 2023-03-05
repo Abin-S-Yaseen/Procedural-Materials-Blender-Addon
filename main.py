@@ -122,6 +122,11 @@ class SHADER_OT_METAL(bpy.types.Operator):
         node = material_metal.node_tree.nodes
         node.clear()
 
+        material_output = node.new(material_output_node)
+        material_output.location = (600,0)
+        material_output.select = False
+        
+        
 # wood material
 class SHADER_OT_WOOD(bpy.types.Operator):
     
