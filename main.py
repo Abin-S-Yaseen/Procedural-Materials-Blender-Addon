@@ -127,6 +127,11 @@ class SHADER_OT_METAL(bpy.types.Operator):
         material_output.select = False
         
         
+        #Create reference to the Principled Node
+        principled = node.new(principled_node)
+        principled.location = (200,0)
+        principled.inputs[6].default_value = 1
+        principled.select = False
 # wood material
 class SHADER_OT_WOOD(bpy.types.Operator):
     
