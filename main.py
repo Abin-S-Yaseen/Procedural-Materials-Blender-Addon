@@ -132,6 +132,11 @@ class SHADER_OT_METAL(bpy.types.Operator):
         principled.location = (200,0)
         principled.inputs[6].default_value = 1
         principled.select = False
+
+        texture_coordinate = node.new(texture_coordinate_node)
+        texture_coordinate.location = (-1000,0)
+        texture_coordinate.select = False
+        
 # wood material
 class SHADER_OT_WOOD(bpy.types.Operator):
     
