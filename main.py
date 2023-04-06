@@ -137,6 +137,12 @@ class SHADER_OT_METAL(bpy.types.Operator):
         texture_coordinate.location = (-1000,0)
         texture_coordinate.select = False
         
+        musgrave = node.new(musgrave_node)
+        musgrave.location = (-800,-300)
+        musgrave.inputs[2].default_value = 1
+        musgrave.inputs[3].default_value = 15
+        musgrave.inputs[4].default_value = 0
+        musgrave.select = False
 # wood material
 class SHADER_OT_WOOD(bpy.types.Operator):
     
