@@ -143,6 +143,14 @@ class SHADER_OT_METAL(bpy.types.Operator):
         musgrave.inputs[3].default_value = 15
         musgrave.inputs[4].default_value = 0
         musgrave.select = False
+
+        mix_rgb = node.new(mix_rgb_node)
+        mix_rgb.location = (-300,0)
+        mix_rgb.data_type = 'RGBA'
+        mix_rgb.blend_type = 'DARKEN'
+        mix_rgb.clamp_factor = False
+        mix_rgb.inputs[0].default_value = 1
+        mix_rgb.select = False
 # wood material
 class SHADER_OT_WOOD(bpy.types.Operator):
     
