@@ -151,6 +151,11 @@ class SHADER_OT_METAL(bpy.types.Operator):
         mix_rgb.clamp_factor = False
         mix_rgb.inputs[0].default_value = 1
         mix_rgb.select = False
+
+        colorramp = node.new(colorramp_node)
+        colorramp.location = (-600,0)
+        colorramp.color_ramp.elements[0].position = 0.371
+        colorramp.select = False
 # wood material
 class SHADER_OT_WOOD(bpy.types.Operator):
     
