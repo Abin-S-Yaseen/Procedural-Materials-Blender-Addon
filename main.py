@@ -156,6 +156,17 @@ class SHADER_OT_METAL(bpy.types.Operator):
         colorramp.location = (-600,0)
         colorramp.color_ramp.elements[0].position = 0.371
         colorramp.select = False
+
+        colorramp1 = node.new(colorramp_node)
+        colorramp1.location = (-100,0)
+        colorramp1.color_ramp.elements[0].color = (0.319, 0.319, 0.319, 1)
+        colorramp1.select = False
+
+        colorramp2 = node.new(colorramp_node)
+        colorramp2.location = (-100,-250)
+        colorramp2.color_ramp.elements[0].color = (0.381, 0.381, 0.381, 1)
+        colorramp2.color_ramp.elements[1].color = (0.107, 0.107, 0.107, 1)
+        colorramp2.select = False
 # wood material
 class SHADER_OT_WOOD(bpy.types.Operator):
     
