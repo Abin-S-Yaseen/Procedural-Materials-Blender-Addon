@@ -167,6 +167,14 @@ class SHADER_OT_METAL(bpy.types.Operator):
         colorramp2.color_ramp.elements[0].color = (0.381, 0.381, 0.381, 1)
         colorramp2.color_ramp.elements[1].color = (0.107, 0.107, 0.107, 1)
         colorramp2.select = False
+
+        noise = node.new(noise_node)
+        noise.location = (-800,0)
+        noise.inputs[2].default_value = 4
+        noise.inputs[3].default_value = 15
+        noise.inputs[4].default_value = 0.7
+        noise.inputs[5].default_value = 0
+        noise.select = False
 # wood material
 class SHADER_OT_WOOD(bpy.types.Operator):
     
