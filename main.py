@@ -175,6 +175,12 @@ class SHADER_OT_METAL(bpy.types.Operator):
         noise.inputs[4].default_value = 0.7
         noise.inputs[5].default_value = 0
         noise.select = False
+        
+        bump = node.new(bump_node)
+        bump.location = (0,-500)
+        bump.inputs[0].default_value = 0.1
+        bump.select = False
+        
 # wood material
 class SHADER_OT_WOOD(bpy.types.Operator):
     
