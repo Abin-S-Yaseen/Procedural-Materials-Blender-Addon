@@ -181,6 +181,9 @@ class SHADER_OT_METAL(bpy.types.Operator):
         bump.inputs[0].default_value = 0.1
         bump.select = False
         
+        #links
+        link = material_metal.node_tree.links
+        link.new(texture_coordinate.outputs[3],noise.inputs[0])
 # wood material
 class SHADER_OT_WOOD(bpy.types.Operator):
     
