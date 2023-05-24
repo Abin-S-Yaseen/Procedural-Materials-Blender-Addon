@@ -184,6 +184,9 @@ class SHADER_OT_METAL(bpy.types.Operator):
         #links
         link = material_metal.node_tree.links
         link.new(texture_coordinate.outputs[3],noise.inputs[0])
+        link.new(texture_coordinate.outputs[3],musgrave.inputs[0])
+        link.new(noise.outputs[0],colorramp.inputs[0])
+        link.new(colorramp.outputs[0], mix_rgb.inputs[6])
 # wood material
 class SHADER_OT_WOOD(bpy.types.Operator):
     
