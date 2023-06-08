@@ -193,6 +193,8 @@ class SHADER_OT_METAL(bpy.types.Operator):
         link.new(mix_rgb.outputs[2], bump.inputs[2])
         link.new(colorramp1.outputs[0], principled.inputs[0])
         link.new(colorramp2.outputs[0], principled.inputs[9])
+        link.new(bump.outputs[0], principled.inputs[22])
+        link.new(principled.outputs[0], material_output.inputs[0])
 # wood material
 class SHADER_OT_WOOD(bpy.types.Operator):
     
