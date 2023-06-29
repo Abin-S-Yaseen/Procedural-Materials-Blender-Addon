@@ -197,6 +197,7 @@ class SHADER_OT_METAL(bpy.types.Operator):
         link.new(principled.outputs[0], material_output.inputs[0])
             
             
+        #Add Material to the currently selected object
 # wood material
 class SHADER_OT_WOOD(bpy.types.Operator):
     
