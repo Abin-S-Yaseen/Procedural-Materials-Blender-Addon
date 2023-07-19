@@ -198,6 +198,7 @@ class SHADER_OT_METAL(bpy.types.Operator):
             
             
         #Add Material to the currently selected object
+        bpy.context.object.active_material = material_metal
 # wood material
 class SHADER_OT_WOOD(bpy.types.Operator):
     
