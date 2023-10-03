@@ -201,6 +201,7 @@ class SHADER_OT_METAL(bpy.types.Operator):
         bpy.context.object.active_material = material_metal
             
         return {'FINISHED'}
+
 # wood material
 class SHADER_OT_WOOD(bpy.types.Operator):
     
