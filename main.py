@@ -305,6 +305,7 @@ class MainPanel(bpy.types.Panel):
         row.operator('shader.gold_operator')
         row = layout.row()
         row.operator('shader.metal_operator')
+        row = layout.row()
         row.operator('shader.wood_operator')
         
 
