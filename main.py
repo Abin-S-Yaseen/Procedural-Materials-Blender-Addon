@@ -313,6 +313,7 @@ class MainPanel(bpy.types.Panel):
 def register():
     bpy.utils.register_class(MainPanel)
     bpy.utils.register_class(SHADER_OT_GOLD)
+    bpy.utils.register_class(SHADER_OT_METAL)
     bpy.utils.register_class(SHADER_OT_WOOD)
     
 #unregistering classes
