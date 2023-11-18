@@ -320,6 +320,7 @@ def register():
 def unregister():
     bpy.utils.unregister_class(MainPanel)
     bpy.utils.unregister_class(SHADER_OT_GOLD)
+    bpy.utils.unregister_class(SHADER_OT_METAL)
     bpy.utils.unregister_class(SHADER_OT_WOOD)
 
     
